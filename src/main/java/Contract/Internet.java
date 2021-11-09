@@ -98,7 +98,8 @@ public class Internet extends Contract {
             return false;
         if (obj.getClass() != this.getClass())
             return false;
-
+        if(!super.equals(obj))
+            return false;
         Internet other = (Internet) obj;
         if (other.speedConnection == this.speedConnection) {
             Contract other2 = (Contract) obj;

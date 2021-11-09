@@ -128,7 +128,8 @@ public class Mobile extends Contract {
             return false;
         if (obj.getClass() != this.getClass())
             return false;
-
+        if(!super.equals(obj))
+            return false;
         Mobile other = (Mobile) obj;
         if (other.minuteAmount == this.minuteAmount) {
             if (other.gigabyteAmount == this.gigabyteAmount) {

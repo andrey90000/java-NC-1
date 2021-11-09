@@ -72,6 +72,7 @@ public class Person {
             return false;
         if (obj.getClass() != this.getClass())
             return false;
+
         Person other = (Person) obj;
         if (this.id != other.id)
             return false;

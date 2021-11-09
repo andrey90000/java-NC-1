@@ -97,7 +97,8 @@ public class Television extends Contract {
             return false;
         if (obj.getClass() != this.getClass())
             return false;
-
+        if(!super.equals(obj))
+            return false;
         Television other = (Television) obj;
         if (other.channelsPack == this.channelsPack) {
             Contract other2 = (Contract) obj;

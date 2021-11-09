@@ -72,7 +72,7 @@ public class Contract {
             return false;
         if (this.endDate != other.endDate)
             return false;
-        if (this.owner != other.owner)
+        if (!this.owner.equals( other.owner))
             return false;
         return true;
     }
